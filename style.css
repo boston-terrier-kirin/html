@@ -1,0 +1,28 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Rubik', sans-serif;
+	line-height: 1;
+	font-weight: 400;
+	color: #555;
+}
+
+.container {
+	width: 120rem;
+	height: 100vh;
+	padding: 0 3.2rem;
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
