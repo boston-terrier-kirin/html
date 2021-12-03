@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<style>
+			/********************/
+			/* HEADER SECTION
+			/********************/
+			.header {
+				height: 9.6rem;
+				padding: 0 2.4rem;
+
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.logo {
+				width: 25%;
+			}
+
+			/********************/
+			/* NAVIGATION
+			/********************/
+			.main-nav-list {
+				list-style: none;
+				display: flex;
+				align-items: center;
+				gap: 3.2rem;
+			}
+
+			.main-nav-link:link,
+			.main-nav-link:visited {
+				display: inline-block;
+				text-decoration: none;
+				font-size: 2rem;
+				font-weight: 600;
+				color: #555;
+				transition: all 0.3s;
+			}
+
+			.main-nav-link:hover,
+			.main-nav-link:active {
+				color: #228be6;
+			}
+
+			.main-nav-link.nav-cta:link,
+			.main-nav-link.nav-cta:visited {
+				display: inline-block;
+				padding: 1.2rem 2.4rem;
+				border-radius: 0.5rem;
+				background-color: #339af0;
+				color: #fff;
+			}
+
+			.main-nav-link.nav-cta:hover,
+			.main-nav-link.nav-cta:active {
+				background-color: #228be6;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="header">
+			<img class="logo" src="logo.png" alt="logo" />
+			<nav class="main-nav">
+				<ul class="main-nav-list">
+					<li><a class="main-nav-link" href="#">Section 1</a></li>
+					<li><a class="main-nav-link" href="#">Section 2</a></li>
+					<li><a class="main-nav-link" href="#">Section 3</a></li>
+					<li><a class="main-nav-link" href="#">Section 4</a></li>
+					<li>
+						<a class="main-nav-link nav-cta" href="#">Section 5</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+	</body>
+</html>
