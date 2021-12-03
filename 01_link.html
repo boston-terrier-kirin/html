@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+			}
+
+			html {
+				font-size: 62.5%;
+			}
+
+			body {
+				font-family: 'Rubik', sans-serif;
+				line-height: 1;
+				font-weight: 400;
+				color: #555;
+			}
+
+			.container {
+				width: 120rem;
+				height: 100vh;
+				padding: 0 3.2rem;
+				margin: 0 auto;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 2rem;
+			}
+
+			/********************/
+			/* BUTTON
+			/********************/
+			.btn:link,
+			.btn:visited {
+				display: inline-block;
+				text-decoration: none;
+				font-size: 2rem;
+				font-weight: 600;
+				padding: 1.6rem 3.2rem;
+				border-radius: 0.5rem;
+				transition: all 0.3s;
+			}
+
+			/********************/
+			/* BUTTON PRIMARY
+			/********************/
+			.btn--primary:link,
+			.btn--primary:visited {
+				background-color: #339af0;
+				color: #fff;
+			}
+
+			.btn--primary:hover,
+			.btn--primary:active {
+				background-color: #228be6;
+			}
+
+			/********************/
+			/* BUTTON OUTLINE
+			/********************/
+			.btn--outline:link,
+			.btn--outline:visited {
+				background-color: #d0ebff;
+				box-shadow: inset 0 0 0 1px #339af0;
+				color: #555;
+			}
+
+			.btn--outline:hover,
+			.btn--outline:active {
+				background-color: #a5d8ff;
+				box-shadow: inset 0 0 0 2px #339af0;
+			}
+
+			/********************/
+			/* BUTTON LINK
+			/********************/
+			.link:link,
+			.link:visited {
+				display: inline-block;
+				font-size: 2rem;
+				color: #339af0;
+				text-decoration: none;
+				border-bottom: 1px solid currentColor;
+				padding-bottom: 2px;
+				transition: all 0.3s;
+			}
+
+			.link:hover,
+			.link:active {
+				color: #228be6;
+				border-bottom: 1px solid transparent;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<a href="" class="btn btn--primary">Learn more &darr;</a>
+			<a href="" class="btn btn--outline">Learn more &darr;</a>
+			<a class="link" href="#">See all recipes &rarr;</a>
+		</div>
+	</body>
+</html>
