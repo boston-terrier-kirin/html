@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<style>
+			.card {
+				box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+				border-radius: 12px;
+				/* 画像がはみ出して四角に見えるので、overflow: hiddenにする。 */
+				overflow: hidden;
+
+				transition: all 0.4s;
+			}
+
+			.card:hover {
+				transform: translateY(-1rem);
+				box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+			}
+
+			.card-content {
+				padding: 2.4rem 4.8rem 4.8rem 4.8rem;
+			}
+
+			.card-img {
+				width: 300px;
+				height: 200px;
+			}
+
+			.card-title {
+				color: #333;
+				font-size: 2.4rem;
+				font-weight: 600;
+				margin-bottom: 3.2rem;
+			}
+
+			.card-attributes {
+				list-style: none;
+				display: flex;
+				flex-direction: column;
+				gap: 2rem;
+			}
+
+			.card-attribute {
+				font-size: 1.8rem;
+				display: flex;
+				align-items: center;
+				gap: 1.6rem;
+			}
+
+			.card-icon {
+				font-size: 2.4rem;
+				color: #228be6;
+			}
+
+			.card-tags {
+				margin-bottom: 1.2rem;
+				display: flex;
+				gap: 0.4rem;
+			}
+
+			.tag {
+				display: inline-block;
+				padding: 0.4rem 0.8rem;
+				font-size: 1.2rem;
+				text-transform: uppercase;
+				color: #333;
+				border-radius: 100px;
+				font-weight: 600;
+			}
+
+			.tag--vegetarian {
+				background-color: #51cf66;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="card">
+				<img class="card-img" src="card-1.jpg" alt="card" />
+				<div class="card-content">
+					<div class="card-tags">
+						<span class="tag tag--vegetarian">Vegetarian</span>
+					</div>
+					<p class="card-title">Japanese Gyozas</p>
+					<ul class="card-attributes">
+						<li class="card-attribute">
+							<ion-icon
+								class="card-icon"
+								name="flame-outline"
+							></ion-icon>
+							<span>
+								<strong>650</strong>
+								Calories
+							</span>
+						</li>
+						<li class="card-attribute">
+							<ion-icon
+								class="card-icon"
+								name="restaurant-outline"
+							></ion-icon>
+							<span>
+								NutriScore &reg;
+								<strong>74</strong>
+							</span>
+						</li>
+						<li class="card-attribute">
+							<ion-icon
+								class="card-icon"
+								name="star-outline"
+							></ion-icon>
+							<span>
+								<strong>4.9</strong>
+								rating (537)
+							</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+	</body>
+</html>
