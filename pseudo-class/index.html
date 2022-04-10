@@ -5,7 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Pseudo Class</title>
-    <style></style>
+    <style>
+      a:link {
+        font-size: 35px;
+        text-decoration: none;
+      }
+      a:visited {
+        color: green;
+      }
+      a:hover {
+        color: #fff;
+        background-color: black;
+      }
+      a:active {
+        color: blueviolet;
+      }
+
+      .dropdown-content a {
+        display: none;
+      }
+      .dropdown:hover .dropdown-content a {
+        /* blockレベルにしているので、縦に並ぶ */
+        display: block;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <a href="https://google.com">Click Here</a>
+
+    <div class="dropdown">
+      <a href="#">Items</a>
+      <div class="dropdown-content">
+        <a href="#">item 1</a>
+        <a href="#">item 2</a>
+        <a href="#">item 3</a>
+      </div>
+    </div>
+  </body>
 </html>
